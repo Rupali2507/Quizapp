@@ -49,6 +49,9 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+let currentQuestionIndex = 0;
+let score = 0;
+
 const home1 = document.querySelector("#home1");
 const home2 = document.querySelector("#home2");
 const rate1 = document.querySelector("#rate1");
@@ -75,11 +78,6 @@ score2.addEventListener("click", () => {
   window.location.href = "Score.html";
 });
 
-let currentQuestionIndex = 0;
-let score = 0;
-home.addEventListener("click", () => {
-  window.location.href = "index.html";
-});
 function showSidebar() {
   const sidebar = document.querySelector(".side-bar");
   sidebar.style.display = "flex";
@@ -89,6 +87,7 @@ function collapseSidebar() {
   const sidebar = document.querySelector(".side-bar");
   sidebar.style.display = "none";
 }
+
 function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
