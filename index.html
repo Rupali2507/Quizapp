@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-     <div class="box"></div>
-    <nav>
-        <ul>
-            <li>QuickQuiz</li>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">Profile</a></li>
-             <li class="hideOnMobile"><a href="#">SignIn</a></li>
-             <li  class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
+    <link rel="stylesheet" href="style.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Nav BAR -->
+        <div class="side-bar">
+      <div onclick="collapseSidebar()" class="cross">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div id="home2" class="nav_icon_side">Home</div>
+      <div id="score2" class="nav_icon_side">My Score</div>
+      <div id="rate2" class="nav_icon_side">Rate us</div>
+    </div>
+    <div class="nav">
+      <div class="logo">QuizApp</div>
+      <div class="right_item">
 
-        </ul>
-        <ul class="sidebar">
-            <li onclick=collapseSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <hr>
-            <li><a href="#">Home</a></li>
-            <hr>
-            <li><a href="#">Profile</a></li>
-            <hr>
-             <li><a href="#">SignIn</a></li>
-             <hr>
-        </ul>
-    </nav>
+        <div id="home1"   class="nav_icon">Home</div>
+        <div id="score1" class="nav_icon">My Score</div>
+        <div id="rate1"class="nav_icon">Rate us</div>
+        <div onclick="showSidebar()" class="humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+      <hr style="color: black;">
+      <!-- Body -->
+    <div class="main">
+      
+      <div class="left">
+        <img src="hero.png" alt="" />
+      </div>
+      <div class="right">
+        <p class="tittle">Unleash Your Inner Wizard of Wisdom</p>
+        <br>
+        <p class="subtittle">
+          Embark on a journey of Knowledge Exploration with Our Extensive
+          Collection of Interactive Quizess.
+        </h3>
+        <br>
+        <br>
+       <div class="bttn">
+         <div class="start_btn">
+            Start your first quiz
+         </div>
+       </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Footer -->
+     <div class="footer">
+        <p>© 2025 Quiz App. All rights reserved.</p>
+        <p>Made with ❤️ by <a href="https://github.com/rupali2507"style="color: #007bff; text-decoration: none;">Rupali</a></p>
+     </div>
+
+  </body>
+  <script src="./script.js"></script>
     
-    <div class="Mid1">
-        <div class="heading">
-      <div class="content">Unleash Your Inner</div>
-      <div class="content">Wizard of Wisdom</div>
-    </div>
-    <br> <br>
-    <div class="subheading">
-        <div class="content1">Embark on a journey of Knowledge Exploration with Our</div>
-        <div class="content1">Extensive Collection of Interactive Quizess.</div>
-    </div>
-     <div class="end">
-       <a href="index1.html"><div class="btn1"> Start with your first quiz </div></a>
-    </div>
-</div>
-    
-    </div>
-   
-</main>
-<script src="script.js"></script>
-</body>
+  
 </html>

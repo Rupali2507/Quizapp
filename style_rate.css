@@ -1,0 +1,48 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  padding: 5px;
+}
+.side-bar {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: end;
+
+  width: 100%;
+}
+.cross,
+.nav_icon_side {
+  height: 100%;
+  width: 25%;
+  padding: 20px;
+  font-size: large;
+  cursor: pointer;
+  background-color: aliceblue;
+  opacity: 0.8;
+  border-bottom: 1px solid black;
+}
+.right_item {
+  display: flex;
+  padding: 20px;
+}
+.humberger,
+.nav_icon {
+  padding: 20px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.footer {
+  background: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
